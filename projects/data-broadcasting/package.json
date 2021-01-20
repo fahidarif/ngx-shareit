@@ -1,0 +1,18 @@
+{
+  "name": "ngx-share",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^11.0.9",
+    "@angular/core": "^11.0.9"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "author": {
+    "name": "M Fahad",
+    "email": "fahidarif@gmail.com",
+    "url": "https://www.linkedin.com/in/fahidarif/"
+  },
+  "description": "Amazing package for data sharing from anywhere of the application to anywhere. It has really simple mechanism of doing it, just plug and play",
+  "keywords": ["angular","data sharing","broadcasting data","components communication","data sharing between components"]
+}

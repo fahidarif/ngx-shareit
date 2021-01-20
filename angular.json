@@ -118,6 +118,46 @@
           }
         }
       }
+    },
+    "data-broadcasting": {
+      "projectType": "library",
+      "root": "projects/data-broadcasting",
+      "sourceRoot": "projects/data-broadcasting/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/data-broadcasting/tsconfig.lib.json",
+            "project": "projects/data-broadcasting/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/data-broadcasting/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/data-broadcasting/src/test.ts",
+            "tsConfig": "projects/data-broadcasting/tsconfig.spec.json",
+            "karmaConfig": "projects/data-broadcasting/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/data-broadcasting/tsconfig.lib.json",
+              "projects/data-broadcasting/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "data-sharing"
