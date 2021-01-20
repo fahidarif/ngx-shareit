@@ -13,6 +13,16 @@
     "email": "fahidarif@gmail.com",
     "url": "https://www.linkedin.com/in/fahidarif/"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fahidarif/ngx-shareit"
+  },
   "description": "Amazing package for data sharing from anywhere of the application to anywhere. It has really simple mechanism of doing it, just plug and play",
-  "keywords": ["angular","data sharing","broadcasting data","components communication","data sharing between components"]
+  "keywords": [
+    "angular",
+    "data sharing",
+    "broadcasting data",
+    "components communication",
+    "data sharing between components"
+  ]
 }
