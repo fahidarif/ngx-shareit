@@ -1,7 +1,7 @@
 
 ## Ng-Share 
 
-[Npm Package](https://www.npmjs.com/package/ngx-shareit) version 11.0.5.
+[Npm Package](https://www.npmjs.com/package/ngx-shareit).
 
 > Amazing package for data sharing from anywhere of the application to anywhere. It has really simple mechanism of doing it, just plug and play ..
 
