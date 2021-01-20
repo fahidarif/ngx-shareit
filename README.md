@@ -1,27 +1,55 @@
-# DataSharing
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
+## Ng-Share 
 
-## Development server
+[Npm Package](https://www.npmjs.com/package/ngx-shareit) version 11.0.5.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+> Amazing package for data sharing from anywhere of the application to anywhere. It has really simple mechanism of doing it, just plug and play ..
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Features
+- Share/Broadcast data.
+- Share data from any level of the component in application.
+- Access data from any level of component in application
+- Really lightweight
 
-## Build
+### Usage
+-------------------------------------------
+### Import in module.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```js
 
-## Running unit tests
+imports: [
+    BrowserModule,
+    NgShareModule
+],
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+### Add in component.
 
-## Running end-to-end tests
+```js
+export class AppComponent {
+   constructor(private dataSer: DataSharingService) { }
+}
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Share Data from any component like.
 
-## Further help
+```js
+getUsers() {
+    // keep one thing in mind always share data in object format
+    this.dataSer.shareData({ users: '// Array of users data' });
+}
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+### Access Data from any component like.
+
+```js
+getUsers() {
+    this.dataSer.getData().subscribe(data => {
+        this.users = data.users;
+    });
+}
+```
+
+---------------------------------------
