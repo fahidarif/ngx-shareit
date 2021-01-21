@@ -1,4 +1,4 @@
-## Ng-Share 
+## Ngx-ShareIt 
 
 > Amazing package for data sharing from anywhere of the application to anywhere. It has really simple mechanism of doing it, just plug and play ..
 
@@ -32,7 +32,7 @@ export class AppComponent {
 ### Share Data from any component like.
 
 ```js
-getUsers() {
+shareUsers() {
     // keep one thing in mind always share data in object format
     this.dataSer.shareData({ users: '// Array of users data' });
 }

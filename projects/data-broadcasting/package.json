@@ -1,6 +1,6 @@
 {
-  "name": "ngx-share",
-  "version": "0.0.1",
+  "name": "ngx-shareit",
+  "version": "1.0.1",
   "peerDependencies": {
     "@angular/common": "^11.0.9",
     "@angular/core": "^11.0.9"
