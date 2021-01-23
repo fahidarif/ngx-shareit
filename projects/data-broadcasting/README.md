@@ -35,18 +35,37 @@ export class AppComponent {
 shareUsers() {
     // keep one thing in mind always share data in object format
     this.dataSer.shareData({ users: '// Array of users data' });
+    //or multiple values from different components
+    this.dataSer.shareData({ name: 'specific name' });
 }
 ```
 
 
-### Access Data from any component like.
+### Access Full Data from any component like.
 
 ```js
 getUsers() {
     this.dataSer.getData().subscribe(data => {
-        this.users = data.users;
+        console.log(data);
+        //ouput :
+        //{
+        //    users : *array data*,
+        //    name : *name data*
+        //}
     });
 }
 ```
 
+
+### Access Specific Data from any component like.
+
+```js
+getSpecificData() {
+    this.dataSer.getSpecificData('users').subscribe(data => {
+      console.log(data);
+      //ouput:
+      // *name data*
+    })
+  }
+```
 ---------------------------------------
